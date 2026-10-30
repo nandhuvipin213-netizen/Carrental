@@ -1,0 +1,668 @@
+.page-title {
+
+    min-height: 260px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    background: #f7faff;
+
+}
+
+
+.page-title p {
+
+    color: #1769ff;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.page-title h1 {
+
+    color: #101828;
+
+    font-size: 42px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.page-title span {
+
+    color: #667085;
+
+    font-size: 14px;
+
+}
+
+
+.about-intro {
+
+    width: 80%;
+
+    max-width: 1100px;
+
+    margin: 80px auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+.about-image {
+
+    height: 350px;
+
+    border-radius: 18px;
+
+    background: #f7faff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+}
+
+
+.about-image img {
+
+    width: 90%;
+
+    height: 90%;
+
+    object-fit: contain;
+
+    transition: 0.3s;
+
+}
+
+
+.about-image:hover img {
+
+    transform: scale(1.04);
+
+}
+
+
+
+.about-content {
+
+    padding: 10px;
+
+}
+
+
+.small-title {
+
+    color: #1769ff;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.small-title span {
+
+    color: #101828;
+
+}
+
+
+.about-content h2 {
+
+    color: #101828;
+
+    font-size: 36px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+
+}
+
+
+.about-content > p:not(.small-title) {
+
+    color: #667085;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+
+}
+
+
+.why-section {
+
+    background: #f7faff;
+
+    padding: 80px 20px;
+
+}
+
+
+.section-heading {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+
+}
+
+
+.section-heading p {
+
+    color: #1769ff;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+.section-heading h2 {
+
+    color: #101828;
+
+    font-size: 34px;
+
+    margin: 10px 0;
+
+}
+
+
+.section-heading span {
+
+    color: #667085;
+
+    font-size: 13px;
+
+}
+
+
+.why-grid {
+
+    width: 80%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.why-card {
+
+    background: white;
+
+    padding: 30px 22px;
+
+    border: 1px solid #dce5f3;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    transition: 0.3s;
+
+}
+
+
+.why-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(16, 24, 40, 0.08);
+
+}
+
+
+.why-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+
+    background: #eaf2ff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+
+}
+
+
+.why-card h3 {
+
+    color: #101828;
+
+    font-size: 16px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.why-card p {
+
+    color: #667085;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+}
+
+
+
+.mission {
+
+    padding: 80px 20px;
+
+    background: #101828;
+
+}
+
+
+.mission-content {
+
+    width: 70%;
+
+    max-width: 850px;
+
+    margin: auto;
+
+    text-align: center;
+
+}
+
+
+.mission-content .small-title {
+
+    color: #4d8cff;
+
+}
+
+
+.mission-content h2 {
+
+    color: white;
+
+    font-size: 36px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.mission-content h2 span {
+
+    color: #4d8cff;
+
+}
+
+
+.mission-content > p:last-child {
+
+    color: #aeb8c8;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+}
+
+
+.stats {
+
+    width: 80%;
+
+    max-width: 1000px;
+
+    margin: 70px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.stat-card {
+
+    text-align: center;
+
+    padding: 25px;
+
+    border-right: 1px solid #dce5f3;
+
+}
+
+
+.stat-card:last-child {
+
+    border-right: none;
+
+}
+
+
+.stat-card h2 {
+
+    color: #1769ff;
+
+    font-size: 32px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.stat-card p {
+
+    color: #667085;
+
+    font-size: 12px;
+
+}
+
+
+
+
+.about-cta {
+
+    background: #f7faff;
+
+    padding: 70px 20px;
+
+    text-align: center;
+
+}
+
+
+.about-cta h2 {
+
+    color: #101828;
+
+    font-size: 30px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.about-cta p {
+
+    color: #667085;
+
+    font-size: 13px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.about-cta a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 45px;
+
+    padding: 0 25px;
+
+    background: #1769ff;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+
+}
+
+
+.about-cta a:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+footer {
+
+    background: #101828;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px;
+
+}
+
+
+footer h2 {
+
+    margin-bottom: 8px;
+
+}
+
+
+footer h2 span {
+
+    color: #4d8cff;
+
+}
+
+
+footer p {
+
+    color: #aeb8c8;
+
+    font-size: 12px;
+
+}
+
+
+
+@media (max-width: 950px) {
+
+    .about-intro {
+
+        width: 90%;
+
+        gap: 40px;
+
+    }
+
+
+    .why-grid {
+
+        width: 90%;
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .stats {
+
+        width: 90%;
+
+    }
+
+}
+
+
+
+@media (max-width: 650px) {
+
+    .page-title {
+
+        min-height: 220px;
+
+    }
+
+
+    .page-title h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .about-intro {
+
+        width: 90%;
+
+        margin: 50px auto;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+    }
+
+
+    .about-image {
+
+        height: 260px;
+
+    }
+
+
+    .about-content h2 {
+
+        font-size: 29px;
+
+    }
+
+
+    .why-section {
+
+        padding: 60px 15px;
+
+    }
+
+
+    .why-grid {
+
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .mission {
+
+        padding: 60px 20px;
+
+    }
+
+
+    .mission-content {
+
+        width: 100%;
+
+    }
+
+
+    .mission-content h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .stats {
+
+        width: 90%;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+
+    }
+
+
+    .stat-card {
+
+        border-right: none;
+
+        border-bottom: 1px solid #dce5f3;
+
+    }
+
+
+    .about-cta h2 {
+
+        font-size: 25px;
+
+    }
+
+}

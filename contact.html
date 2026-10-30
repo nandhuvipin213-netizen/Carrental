@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CARRENTAL/css/stylesheet.css">
+    <link rel="stylesheet" href="/CARRENTAL/css/cotact.css">
+</head>
+
+<body>
+    <header>
+        <a href="home.html">
+            <div class="logo">
+                <img src="/CARRENTAL/carimg/logoo.png" alt="">
+            </div>
+        </a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="cars.html">Cars</a>
+            <a href="cardetails.html">Car Details</a>
+            <a href="booking.html">Booking</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html" class="active">Contact Us</a>
+            <a href="login.html">Login</a>
+        </nav>
+        <div class="btn">
+            <button id="themeBtn" class="theme-btn">
+                🌙
+            </button>
+            <a href="login.html" class="login-btn">
+                👤login / sign up
+            </a>
+        </div>
+    </header>
+
+    <section class="contact-title">
+
+        <p>GET IN TOUCH</p>
+
+        <h2>Contact Us</h2>
+
+        <span>Have any doubt We're here to help</span>
+    </section>
+
+    <main class="contact-container">
+
+        <section class="contact-info">
+            <h2>Lent's Talk</h2>
+
+            <p>Whether you have a question about our cars, booking process,
+                or anything else, our team is ready to help you.</p>
+
+            <!-- location -->
+            <div class="contact-card">
+                <div class="contact-icon">
+                    📌
+                </div>
+
+                <div>
+                    <h2>Our Location</h2>
+
+                    <p>Alappuzha,Kerala</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">
+                    📞
+                </div>
+
+                <div>
+                    <h2>Phone Number</h2>
+
+                    <p>+91 98765 43210</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">
+                    📧
+                </div>
+
+                <div>
+                    <h2>Email Address</h2>
+
+                    <p>support@driveeasy.com</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">
+                    🕐
+                </div>
+
+                <div>
+                    <h2>Working Hours</h2>
+
+                    <p>Monday-sunday</p>
+
+                    <small>
+                        9:00 AM - 9:00PM
+                    </small>
+                </div>
+            </div>
+        </section>
+
+        <section class="contactForm">
+
+              <h2>Send Us a Message</h2>
+
+            <p>
+                Fill out the form and we'll get back to you soon.
+            </p>
+
+
+            <form id="contactForm">
+                <div class="input-row">
+
+                    <div class="input-group">
+
+                        <label for="contactName">Full Name</label>
+
+                        <input type="text" id="contactName" placeholder="Enter your name">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="contactPhone">Phone Number</label>
+
+                        <input type="tel" id="contactPhone" placeholder="Enter phone number">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="contactEmail">Email Address</label>
+
+                    <input type="email" id="contactEmail" placeholder="Enter your email">
+                </div>
+
+                <div class="input-group">
+                    <label for="subject">Subject</label>
+
+                    <select id="subject">
+                        <option value="">
+                            Select a subject
+                        </option>
+
+                        <option value="booking">
+                            Booking Question
+                        </option>
+
+                        <option value="car">
+                            car Information
+                        </option>
+
+                        <option value="payment">
+                            Payment Question
+                        </option>
+
+                        <option value="support">
+                            General Support
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="message">Message</label>
+
+                    <textarea id="message" placeholder="Write your message here"></textarea>
+                </div>
+
+                <button type="submit" class="send-btn">
+                    Send Message →
+                </button>
+
+            </form>
+
+        </section>
+    </main>
+
+     <footer>
+
+        <h2>
+            Drive<span>Easy</span>
+        </h2>
+
+        <p>
+            Your journey starts with the right car.
+        </p>
+
+    </footer>
+
+
+    <script src="/CARRENTAL/js/contact.js"></script>
+</body>
+
+</html>

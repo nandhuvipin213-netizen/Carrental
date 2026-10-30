@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CARRENTAL/css/stylesheet.css">
+    <link rel="stylesheet" href="/CARRENTAL/css/cars.css">
+</head>
+
+<body>
+    <header>
+        <a href="home.html">
+            <div class="logo">
+                <img src="/CARRENTAL/carimg/logoo.png" alt="">
+            </div>
+        </a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="cars.html" class="active">Cars</a>
+            <a href="cardetails.html">Car Details</a>
+            <a href="booking.html">Booking</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html">Login</a>
+        </nav>
+        <div class="btn">
+            <button id="themeBtn" class="theme-btn">
+                🌙
+            </button>
+            <a href="login.html" class="login-btn">
+                👤login / sign up
+            </a>
+        </div>
+    </header>
+
+
+    <section class="cars-intro">
+
+        <div>
+            <p class="page-label">OUR FLEET</p>
+
+            <h1>
+                Choose Your <span>Perfect Ride</span>
+            </h1>
+
+            <p>
+                Explore our collection of comfortable,
+                reliable and premium vehicles.
+            </p>
+        </div>
+
+        <div class="car-count">
+            <strong id="carCount">9</strong>
+            <span>Cars Available</span>
+        </div>
+
+    </section>
+
+    <!-- SEARCH -->
+
+    <section class="car-search">
+
+        <div class="search-input">
+
+            <span>🔍</span>
+
+            <input type="text" id="searchCar" placeholder="Search by car name...">
+
+        </div>
+
+
+        <select id="categoryFilter">
+
+            <option value="all">
+                All Categories
+            </option>
+
+            <option value="SUV">
+                SUV
+            </option>
+
+            <option value="Sedan">
+                Sedan
+            </option>
+
+            <option value="Hatchback">
+                Hatchback
+            </option>
+
+            <option value="Luxury">
+                Luxury
+            </option>
+
+        </select>
+
+
+        <select id="sortCars">
+
+            <option value="default">
+                Sort By
+            </option>
+
+            <option value="low">
+                Price: Low to High
+            </option>
+
+            <option value="high">
+                Price: High to Low
+            </option>
+
+            <option value="name">
+                Name: A-Z
+            </option>
+
+        </select>
+
+    </section>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="cars-layout">
+
+
+        <!-- FILTER SIDEBAR -->
+
+        <aside class="filter-panel">
+
+            <div class="filter-title">
+
+                <h2>Filters</h2>
+
+                <button id="clearFilters">
+                    Clear
+                </button>
+
+            </div>
+
+
+            <!-- PRICE -->
+
+            <div class="filter-group">
+
+                <h3>Price Per Day</h3>
+
+                <div class="price-values">
+
+                    <span>₹<b id="minPriceText">999</b></span>
+
+                    <span>₹<b id="maxPriceText">5000</b></span>
+
+                </div>
+
+                <input type="range" id="priceFilter" min="999" max="5000" value="5000">
+
+            </div>
+
+
+            <!-- SEATING -->
+
+            <div class="filter-group">
+
+                <h3>Seats</h3>
+
+                <label>
+                    <input type="checkbox" class="seatFilter" value="5">
+                    5 Seater
+                </label>
+
+                <label>
+                    <input type="checkbox" class="seatFilter" value="7">
+                    7 Seater
+                </label>
+
+            </div>
+
+
+            <!-- FUEL -->
+
+            <div class="filter-group">
+
+                <h3>Fuel Type</h3>
+
+                <label>
+                    <input type="checkbox" class="fuelFilter" value="Petrol">
+                    Petrol
+                </label>
+
+                <label>
+                    <input type="checkbox" class="fuelFilter" value="Diesel">
+                    Diesel
+                </label>
+
+            </div>
+
+
+            <!-- TRANSMISSION -->
+
+            <div class="filter-group">
+
+                <h3>Transmission</h3>
+
+                <label>
+                    <input type="checkbox" class="transFilter" value="Automatic">
+                    Automatic
+                </label>
+
+                <label>
+                    <input type="checkbox" class="transFilter" value="Manual">
+                    Manual
+                </label>
+
+            </div>
+
+        </aside>
+
+
+        <!-- CAR COLLECTION -->
+
+        <section class="cars-area">
+
+            <div class="results-bar">
+
+                <span>
+                    Showing <b id="resultCount">9</b> cars
+                </span>
+
+                <button id="gridButton">
+                    ▦
+                </button>
+
+            </div>
+
+
+            <div class="cars-grid" id="carsGrid">
+
+
+                <!-- FORTUNER -->
+
+                <article class="vehicle" data-name="Toyota Fortuner" data-category="SUV" data-price="2999"
+                    data-seats="7" data-fuel="Diesel" data-transmission="Automatic">
+
+                    <div class="vehicle-image">
+
+                        <img src="/CARRENTAL/carimg/fortuner.png" alt="Toyota Fortuner">
+
+                        <span class="availability">
+                            Available
+                        </span>
+
+                        <button class="favorite">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="vehicle-content">
+
+                        <div class="vehicle-heading">
+
+                            <div>
+                                <h2>Toyota Fortuner</h2>
+                                <span>SUV</span>
+                            </div>
+
+                            <div class="rating">
+                                ★ 4.8
+                            </div>
+
+                        </div>
+
+                        <div class="specs">
+
+                            <span>👤 7 Seats</span>
+                            <span>⛽ Diesel</span>
+                            <span>⚙ Automatic</span>
+
+                        </div>
+
+                        <div class="vehicle-bottom">
+
+                            <div class="price">
+                                ₹2,999
+                                <small>/ day</small>
+                            </div>
+
+                            <a href="cardetails.html">
+                                Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- I20 -->
+
+                <article class="vehicle" data-name="Hyundai i20" data-category="Hatchback" data-price="1499"
+                    data-seats="5" data-fuel="Petrol" data-transmission="Manual">
+
+                    <div class="vehicle-image">
+
+                        <img src="/CARRENTAL/carimg/hyundaii20.png" alt="Hyundai i20">
+
+                        <span class="availability">
+                            Available
+                        </span>
+
+                        <button class="favorite">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="vehicle-content">
+
+                        <div class="vehicle-heading">
+
+                            <div>
+                                <h2>Hyundai i20</h2>
+                                <span>Hatchback</span>
+                            </div>
+
+                            <div class="rating">
+                                ★ 4.7
+                            </div>
+
+                        </div>
+
+                        <div class="specs">
+
+                            <span>👤 5 Seats</span>
+                            <span>⛽ Petrol</span>
+                            <span>⚙ Manual</span>
+
+                        </div>
+
+                        <div class="vehicle-bottom">
+
+                            <div class="price">
+                                ₹1,499
+                                <small>/ day</small>
+                            </div>
+
+                            <a href="cardetails.html">
+                                Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- HONDA CITY -->
+
+                <article class="vehicle" data-name="Honda City" data-category="Sedan" data-price="1799" data-seats="5"
+                    data-fuel="Petrol" data-transmission="Automatic">
+
+                    <div class="vehicle-image">
+
+                        <img src="/CARRENTAL/carimg/hondacity.png" alt="Honda City">
+
+                        <span class="availability">
+                            Available
+                        </span>
+
+                        <button class="favorite">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="vehicle-content">
+
+                        <div class="vehicle-heading">
+
+                            <div>
+                                <h2>Honda City</h2>
+                                <span>Sedan</span>
+                            </div>
+
+                            <div class="rating">
+                                ★ 4.9
+                            </div>
+
+                        </div>
+
+                        <div class="specs">
+
+                            <span>👤 5 Seats</span>
+                            <span>⛽ Petrol</span>
+                            <span>⚙ Automatic</span>
+
+                        </div>
+
+                        <div class="vehicle-bottom">
+
+                            <div class="price">
+                                ₹1,799
+                                <small>/ day</small>
+                            </div>
+
+                            <a href="cardetails.html">
+                                Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SWIFT -->
+
+                <article class="vehicle" data-name="Maruti Swift" data-category="Hatchback" data-price="1299"
+                    data-seats="5" data-fuel="Petrol" data-transmission="Manual">
+
+                    <div class="vehicle-image">
+
+                        <img src="/CARRENTAL/carimg/marutiswift.png" alt="Maruti Swift">
+
+                        <span class="availability">
+                            Available
+                        </span>
+
+                        <button class="favorite">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="vehicle-content">
+
+                        <div class="vehicle-heading">
+
+                            <div>
+                                <h2>Maruti Swift</h2>
+                                <span>Hatchback</span>
+                            </div>
+
+                            <div class="rating">
+                                ★ 4.6
+                            </div>
+
+                        </div>
+
+                        <div class="specs">
+
+                            <span>👤 5 Seats</span>
+                            <span>⛽ Petrol</span>
+                            <span>⚙ Manual</span>
+
+                        </div>
+
+                        <div class="vehicle-bottom">
+
+                            <div class="price">
+                                ₹1,299
+                                <small>/ day</small>
+                            </div>
+
+                            <a href="cardetails.html">
+                                Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CAMRY -->
+
+                <article class="vehicle" data-name="Toyota Camry" data-category="Luxury" data-price="3999"
+                    data-seats="5" data-fuel="Petrol" data-transmission="Automatic">
+
+                    <div class="vehicle-image">
+
+                        <img src="/CARRENTAL/carimg/toyotacamry.png" alt="Toyota Camry">
+
+                        <span class="availability">
+                            Available
+                        </span>
+
+                        <button class="favorite">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="vehicle-content">
+
+                        <div class="vehicle-heading">
+
+                            <div>
+                                <h2>Toyota Camry</h2>
+                                <span>Luxury</span>
+                            </div>
+
+                            <div class="rating">
+                                ★ 4.9
+                            </div>
+
+                        </div>
+
+                        <div class="specs">
+
+                            <span>👤 5 Seats</span>
+                            <span>⛽ Petrol</span>
+                            <span>⚙ Automatic</span>
+
+                        </div>
+
+                        <div class="vehicle-bottom">
+
+                            <div class="price">
+                                ₹3,999
+                                <small>/ day</small>
+                            </div>
+
+                            <a href="cardetails.html">
+                                Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- BMW -->
+
+                <article class="vehicle" data-name="BMW 3 Series" data-category="Luxury" data-price="4999"
+                    data-seats="5" data-fuel="Petrol" data-transmission="Automatic">
+
+                    <div class="vehicle-image">
+
+                        <img src="/CARRENTAL/carimg/bmwseries.png" alt="BMW 3 Series">
+
+                        <span class="availability">
+                            Available
+                        </span>
+
+                        <button class="favorite">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="vehicle-content">
+
+                        <div class="vehicle-heading">
+
+                            <div>
+                                <h2>BMW 3 Series</h2>
+                                <span>Luxury</span>
+                            </div>
+
+                            <div class="rating">
+                                ★ 4.9
+                            </div>
+
+                        </div>
+
+                        <div class="specs">
+
+                            <span>👤 5 Seats</span>
+                            <span>⛽ Petrol</span>
+                            <span>⚙ Automatic</span>
+
+                        </div>
+
+                        <div class="vehicle-bottom">
+
+                            <div class="price">
+                                ₹4,999
+                                <small>/ day</small>
+                            </div>
+
+                            <a href="cardetails.html">
+                                Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MERCEDES -->
+
+                <article class="vehicle" data-name="Mercedes-Benz C-Class" data-category="Luxury" data-price="4799"
+                    data-seats="5" data-fuel="Petrol" data-transmission="Automatic">
+
+                    <div class="vehicle-image">
+
+                        <img src="/CARRENTAL/carimg/mercedesbenz_c_class.png" alt="Mercedes-Benz C-Class">
+
+                        <span class="availability">
+                            Available
+                        </span>
+
+                        <button class="favorite">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="vehicle-content">
+
+                        <div class="vehicle-heading">
+
+                            <div>
+                                <h2>Mercedes C-Class</h2>
+                                <span>Luxury</span>
+                            </div>
+
+                            <div class="rating">
+                                ★ 4.9
+                            </div>
+
+                        </div>
+
+                        <div class="specs">
+
+                            <span>👤 5 Seats</span>
+                            <span>⛽ Petrol</span>
+                            <span>⚙ Automatic</span>
+
+                        </div>
+
+                        <div class="vehicle-bottom">
+
+                            <div class="price">
+                                ₹4,799
+                                <small>/ day</small>
+                            </div>
+
+                            <a href="cardetails.html">
+                                Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CRETA -->
+
+                <article class="vehicle" data-name="Hyundai Creta" data-category="SUV" data-price="2299" data-seats="5"
+                    data-fuel="Petrol" data-transmission="Automatic">
+
+                    <div class="vehicle-image">
+
+                        <img src="/CARRENTAL/carimg/hyundaicreta.png" alt="Hyundai Creta">
+
+                        <span class="availability">
+                            Available
+                        </span>
+
+                        <button class="favorite">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="vehicle-content">
+
+                        <div class="vehicle-heading">
+
+                            <div>
+                                <h2>Hyundai Creta</h2>
+                                <span>SUV</span>
+                            </div>
+
+                            <div class="rating">
+                                ★ 4.8
+                            </div>
+
+                        </div>
+
+                        <div class="specs">
+
+                            <span>👤 5 Seats</span>
+                            <span>⛽ Petrol</span>
+                            <span>⚙ Automatic</span>
+
+                        </div>
+
+                        <div class="vehicle-bottom">
+
+                            <div class="price">
+                                ₹2,299
+                                <small>/ day</small>
+                            </div>
+
+                            <a href="cardetails.html">
+                                Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SELTOS -->
+
+                <article class="vehicle" data-name="Kia Seltos" data-category="SUV" data-price="2399" data-seats="5"
+                    data-fuel="Petrol" data-transmission="Automatic">
+
+                    <div class="vehicle-image">
+
+                        <img src="/CARRENTAL/carimg/kiaseltos.png" alt="Kia Seltos">
+
+                        <span class="availability">
+                            Available
+                        </span>
+
+                        <button class="favorite">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="vehicle-content">
+
+                        <div class="vehicle-heading">
+
+                            <div>
+                                <h2>Kia Seltos</h2>
+                                <span>SUV</span>
+                            </div>
+
+                            <div class="rating">
+                                ★ 4.8
+                            </div>
+
+                        </div>
+
+                        <div class="specs">
+
+                            <span>👤 5 Seats</span>
+                            <span>⛽ Petrol</span>
+                            <span>⚙ Automatic</span>
+
+                        </div>
+
+                        <div class="vehicle-bottom">
+
+                            <div class="price">
+                                ₹2,399
+                                <small>/ day</small>
+                            </div>
+
+                            <a href="cardetails.html">
+                                Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <div id="noCars" class="no-cars">
+                No cars found matching your filters.
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-brand">
+
+            <h2>
+                Drive<span>Easy</span>
+            </h2>
+
+            <p>
+                Making every journey easier,
+                safer and more comfortable.
+            </p>
+
+        </div>
+
+        <div>
+            <h3>Explore</h3>
+            <a href="home.html">Home</a>
+            <a href="cars.html">Cars</a>
+            <a href="about.html">About</a>
+        </div>
+
+        <div>
+            <h3>Support</h3>
+            <a href="booking.html">Booking</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">FAQ</a>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <p>📞 +91 98765 43210</p>
+            <p>✉️ support@driveeasy.com</p>
+        </div>
+
+    </footer>
+
+
+    <script src="js/cars.js"></script>
+</body>
+
+</html>

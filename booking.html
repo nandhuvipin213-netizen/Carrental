@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CARRENTAL/css/stylesheet.css">
+    <link rel="stylesheet" href="/CARRENTAL/css/booking.css">
+</head>
+<body>
+    <header>
+        <a href="home.html">
+            <div class="logo">
+                <img src="/CARRENTAL/carimg/logoo.png" alt="">
+            </div>
+        </a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="cars.html">Cars</a>
+            <a href="cardetails.html">Car Details</a>
+            <a href="booking.html" class="active">Booking</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html">Login</a>
+        </nav>
+        <div class="btn">
+            <button id="themeBtn" class="theme-btn">
+                🌙
+            </button>
+            <a href="login.html" class="login-btn">
+                👤login / sign up
+            </a>
+        </div>
+    </header>
+
+
+    <section class="page-title">
+
+        <p>RESERVE YOUR CAR</p>
+
+        <h1>Complete Your Booking</h1>
+
+        <span>
+            Fill in your details and choose your rental dates
+        </span>
+
+    </section>
+
+
+    <!-- BOOKING AREA -->
+
+    <main class="booking-container">
+
+
+        <!-- LEFT SIDE -->
+
+        <section class="booking-form">
+
+            <h2>Booking Information</h2>
+
+            <p class="form-subtitle">
+                Enter your details to reserve the car.
+            </p>
+
+
+            <!-- PERSONAL DETAILS -->
+
+            <div class="form-section">
+
+                <h3>Personal Details</h3>
+
+
+                <div class="input-row">
+
+                    <div class="input-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter phone number"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- RENTAL DETAILS -->
+
+            <div class="form-section">
+
+                <h3>Rental Details</h3>
+
+
+                <div class="input-row">
+
+                    <div class="input-group">
+
+                        <label for="pickupDate">
+                            Pickup Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="pickupDate"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="returnDate">
+                            Return Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="returnDate"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="input-row">
+
+                    <div class="input-group">
+
+                        <label for="pickupLocation">
+                            Pickup Location
+                        </label>
+
+                        <select id="pickupLocation">
+
+                            <option value="">
+                                Select location
+                            </option>
+
+                            <option>
+                                Alappuzha
+                            </option>
+
+                            <option>
+                                Kochi
+                            </option>
+
+                            <option>
+                                Kottayam
+                            </option>
+
+                            <option>
+                                Thiruvananthapuram
+                            </option>
+
+                            <option>
+                                Kozhikode
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="pickupTime">
+                            Pickup Time
+                        </label>
+
+                        <input
+                            type="time"
+                            id="pickupTime"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ADDITIONAL OPTIONS -->
+
+            <div class="form-section">
+
+                <h3>Additional Options</h3>
+
+
+                <label class="checkbox">
+
+                    <input
+                        type="checkbox"
+                        id="insurance"
+                    >
+
+                    <span>
+                        Add insurance
+                        <small>₹300 / day</small>
+                    </span>
+
+                </label>
+
+
+                <label class="checkbox">
+
+                    <input
+                        type="checkbox"
+                        id="driver"
+                    >
+
+                    <span>
+                        Add professional driver
+                        <small>₹800 / day</small>
+                    </span>
+
+                </label>
+
+            </div>
+
+
+            <!-- SPECIAL REQUEST -->
+
+            <div class="form-section">
+
+                <h3>Special Request</h3>
+
+                <textarea
+                    id="message"
+                    placeholder="Any special requirements?"
+                ></textarea>
+
+            </div>
+
+
+            <button
+                id="continueBtn"
+                class="continue-btn"
+            >
+                Continue to Confirmation →
+            </button>
+
+        </section>
+
+
+        <!-- RIGHT SIDE -->
+
+        <aside class="booking-summary">
+
+
+            <h2>Your Booking</h2>
+
+
+            <!-- SELECTED CAR -->
+
+            <div class="selected-car">
+
+                <div class="car-image">
+
+                    <img
+                        id="carImage"
+                        src="/CARRENTAL/carimg/fortuner.png"
+                        alt="Selected Car"
+                    >
+
+                </div>
+
+
+                <div class="car-info">
+
+                    <p id="carType">
+                        PREMIUM SUV
+                    </p>
+
+                    <h3 id="carName">
+                        Toyota Fortuner
+                    </h3>
+
+                    <span id="carModel">
+                        2024 Model
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRICE -->
+
+            <div class="summary-details">
+
+                <div>
+                    <span>Daily rental</span>
+
+                    <strong>
+                        ₹<span id="dailyPrice">
+                            2,999
+                        </span>
+                    </strong>
+                </div>
+
+
+                <div>
+                    <span>Rental days</span>
+
+                    <strong>
+                        <span id="rentalDays">
+                            1
+                        </span>
+                    </strong>
+                </div>
+
+
+                <div id="insuranceRow" class="hidden">
+
+                    <span>Insurance</span>
+
+                    <strong>
+                        ₹<span id="insurancePrice">
+                            0
+                        </span>
+                    </strong>
+
+                </div>
+
+
+                <div id="driverRow" class="hidden">
+
+                    <span>Driver</span>
+
+                    <strong>
+                        ₹<span id="driverPrice">
+                            0
+                        </span>
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- TOTAL -->
+
+            <div class="total">
+
+                <span>Total Amount</span>
+
+                <h2>
+                    ₹<span id="totalPrice">
+                        2,999
+                    </span>
+                </h2>
+
+            </div>
+
+
+            <div class="secure">
+
+                🔒
+                <span>
+                    Your booking information is secure.
+                </span>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h2>
+            Drive<span>Easy</span>
+        </h2>
+
+        <p>
+            Your journey starts with the right car.
+        </p>
+
+    </footer>
+
+ 
+
+    <script src="/CARRENTAL/js/booking.js"></script>
+</body>
+</html>

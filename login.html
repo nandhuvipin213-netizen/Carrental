@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/CARRENTAL/css/stylesheet.css">
+    <link rel="stylesheet" href="/CARRENTAL/css/login.css">
+</head>
+
+<body>
+    <header>
+        <a href="home.html">
+            <div class="logo">
+                <img src="/CARRENTAL/carimg/logoo.png" alt="">
+            </div>
+        </a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="cars.html">Cars</a>
+            <a href="cardetails.html">Car Details</a>
+            <a href="booking.html">Booking</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html" class="active">Login</a>
+        </nav>
+        <div class="btn">
+            <button id="themeBtn" class="theme-btn">
+                🌙
+            </button>
+            <a href="login.html" class="login-btn">
+                👤login / sign up
+            </a>
+        </div>
+    </header>
+
+    <main class="auth-container">
+
+        <div class="auth-box">
+            <!-- left -->
+
+            <section class="auth-info">
+                <div class="auth-logo">
+                    <img src="/CARRENTAL/carimg/logoo.png" alt="">
+                </div>
+
+                <h1>
+                    Welcome to
+                    <span>DriveEasy</span>
+                </h1>
+
+                <p>
+                    Your journey starts with the right car.
+                    Login to manage your bookings and
+                    explore our cars.
+                </p>
+
+                <div class="auth-features">
+
+                    <div>
+                        🚗
+                        <span>Wide range of cars</span>
+                    </div>
+
+                    <div>
+                        🔒
+                        <span>Secure booking</span>
+                    </div>
+
+                    <div>
+                        ⚡
+                        <span>Easy & fast process</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="auth-form">
+
+
+                <!-- LOGIN -->
+
+                <div id="loginFormContainer" class="form-container">
+
+                    <h2>Welcome Back</h2>
+
+                    <p>
+                        Login to your DriveEasy account
+                    </p>
+
+
+                    <form id="loginForm">
+
+                        <div class="input-group">
+
+                            <label for="loginEmail">
+                                Email Address
+                            </label>
+
+                            <input type="email" id="loginEmail" placeholder="Enter your email">
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="loginPassword">
+                                Password
+                            </label>
+
+                            <div class="password-box">
+
+                                <input type="password" id="loginPassword" placeholder="Enter your password">
+
+                                <button type="button" class="show-password" data-target="loginPassword">
+                                    👁
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-options">
+
+                            <label>
+                                <input type="checkbox" id="rememberMe">
+
+                                Remember me
+                            </label>
+
+                            <a href="#">
+                                Forgot Password?
+                            </a>
+
+                        </div>
+
+
+                        <button type="submit" class="auth-btn">
+                            Login
+                        </button>
+
+                    </form>
+
+
+                    <div class="switch-form">
+
+                        <span>
+                            Don't have an account?
+                        </span>
+
+                        <button id="showSignup">
+                            Create Account
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SIGN UP -->
+
+                <div id="signupFormContainer" class="form-container hidden">
+
+
+                    <h2>Create Account</h2>
+
+                    <p>
+                        Join DriveEasy today
+                    </p>
+
+
+                    <form id="signupForm">
+
+
+                        <div class="input-group">
+
+                            <label for="signupName">
+                                Full Name
+                            </label>
+
+                            <input type="text" id="signupName" placeholder="Enter your full name">
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="signupEmail">
+                                Email Address
+                            </label>
+
+                            <input type="email" id="signupEmail" placeholder="Enter your email">
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="signupPhone">
+                                Phone Number
+                            </label>
+
+                            <input type="tel" id="signupPhone" placeholder="Enter your phone number">
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="signupPassword">
+                                Password
+                            </label>
+
+                            <div class="password-box">
+
+                                <input type="password" id="signupPassword" placeholder="Create a password">
+
+                                <button type="button" class="show-password" data-target="signupPassword">
+                                    👁
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="confirmPassword">
+                                Confirm Password
+                            </label>
+
+                            <div class="password-box">
+
+                                <input type="password" id="confirmPassword" placeholder="Confirm your password">
+
+                                <button type="button" class="show-password" data-target="confirmPassword">
+                                    👁
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <label class="terms">
+
+                            <input type="checkbox" id="terms">
+
+                            <span>
+                                I agree to the
+                                <a href="#">
+                                    Terms & Conditions
+                                </a>
+                            </span>
+
+                        </label>
+
+
+                        <button type="submit" class="auth-btn">
+                            Create Account
+                        </button>
+
+                    </form>
+
+
+                    <div class="switch-form">
+
+                        <span>
+                            Already have an account?
+                        </span>
+
+                        <button id="showLogin">
+                            Login
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h2>
+            Drive<span>Easy</span>
+        </h2>
+
+        <p>
+            Your journey starts with the right car.
+        </p>
+
+    </footer>
+    </div>
+    </main>
+    <script src="/CARRENTAL/js/login.js"></script>
+</body>
+
+</html>

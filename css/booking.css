@@ -1,0 +1,498 @@
+/* PAGE TITLE */
+
+.page-title {
+    text-align: center;
+
+    padding: 55px 20px 35px;
+}
+
+.page-title p {
+    color: var(--primary);
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.page-title h1 {
+    color: var(--dark);
+
+    font-size: 38px;
+
+    margin: 10px 0;
+}
+
+.page-title span {
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+
+/* MAIN */
+
+.booking-container {
+    width: 88%;
+
+    max-width: 1200px;
+
+    margin: 0 auto 70px;
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 0.8fr;
+
+    gap: 30px;
+
+    align-items: start;
+}
+
+
+/* FORM */
+
+.booking-form {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    padding: 30px;
+}
+
+.booking-form > h2 {
+    color: var(--dark);
+
+    font-size: 24px;
+}
+
+.form-subtitle {
+    color: var(--muted);
+
+    font-size: 12px;
+
+    margin-top: 6px;
+}
+
+
+/* FORM SECTION */
+
+.form-section {
+    border-top: 1px solid var(--border);
+
+    margin-top: 25px;
+
+    padding-top: 25px;
+}
+
+.form-section h3 {
+    color: var(--dark);
+
+    font-size: 16px;
+
+    margin-bottom: 18px;
+}
+
+
+/* INPUT */
+
+.input-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 38px;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+
+    color: var(--text);
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+.input-group input,
+.input-group select,
+textarea {
+    width: 100%;
+
+    height: 45px;
+
+    padding: 0 13px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 7px;
+
+    outline: none;
+
+    background: var(--white);
+
+    color: var(--text);
+
+    font-size: 12px;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+textarea:focus {
+    border-color: var(--primary);
+}
+
+
+/* TEXTAREA */
+
+textarea {
+    height: 100px;
+
+    padding: 13px;
+
+    resize: vertical;
+}
+
+
+/* CHECKBOX */
+
+.checkbox {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 13px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+
+    margin-bottom: 10px;
+
+    cursor: pointer;
+}
+
+.checkbox input {
+    width: 17px;
+
+    height: 17px;
+
+    accent-color: var(--primary);
+}
+
+.checkbox span {
+    color: var(--text);
+
+    font-size: 12px;
+}
+
+.checkbox small {
+    display: block;
+
+    color: var(--muted);
+
+    margin-top: 3px;
+}
+
+
+/* CONTINUE */
+
+.continue-btn {
+    width: 100%;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: var(--primary);
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 25px;
+}
+
+.continue-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* SUMMARY */
+
+.booking-summary {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    position: sticky;
+
+    top: 20px;
+}
+
+.booking-summary > h2 {
+    color: var(--dark);
+
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+
+/* SELECTED CAR */
+
+.selected-car {
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.car-image {
+    height: 180px;
+
+    background: #f1f4f8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.car-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+}
+
+.car-info {
+    padding: 15px;
+}
+
+.car-info p {
+    color: var(--primary);
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+.car-info h3 {
+    color: var(--dark);
+
+    font-size: 20px;
+
+    margin: 5px 0;
+}
+
+.car-info span {
+    color: var(--muted);
+
+    font-size: 11px;
+}
+
+
+/* SUMMARY DETAILS */
+
+.summary-details {
+    border-bottom: 1px solid var(--border);
+
+    padding: 20px 0;
+}
+
+.summary-details > div {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 13px;
+}
+
+.summary-details span {
+    color: var(--muted);
+
+    font-size: 12px;
+}
+
+.summary-details strong {
+    color: var(--dark);
+
+    font-size: 12px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/* TOTAL */
+
+.total {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 0;
+}
+
+.total span {
+    color: var(--text);
+
+    font-size: 13px;
+}
+
+.total h2 {
+    color: var(--primary);
+
+    font-size: 25px;
+}
+
+
+/* SECURE */
+
+.secure {
+    display: flex;
+
+    gap: 8px;
+
+    align-items: center;
+
+    background: #f1f6ff;
+
+    padding: 12px;
+
+    border-radius: 7px;
+
+    color: var(--primary);
+
+    font-size: 12px;
+}
+
+.secure span {
+    color: var(--muted);
+}
+
+
+/* FOOTER */
+
+footer {
+    background: var(--dark);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+footer h2 {
+    margin-bottom: 8px;
+}
+
+footer h2 span {
+    color: #4d8cff;
+}
+
+footer p {
+    color: #aeb8c8;
+
+    font-size: 12px;
+}
+
+
+/* DARK MODE */
+
+body.dark {
+    --background: #0d1420;
+
+    --white: #151e2c;
+
+    --dark: #f4f6f8;
+
+    --text: #d5dbe4;
+
+    --muted: #9ba8b9;
+
+    --border: #293548;
+}
+
+body.dark .car-image {
+    background: #202a38;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .booking-container {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-summary {
+        position: static;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+    .header nav {
+        display: none;
+    }
+
+    .page-title h1 {
+        font-size: 29px;
+    }
+
+    .booking-container {
+        width: 92%;
+    }
+
+    .booking-form {
+        padding: 20px;
+    }
+
+    .input-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .booking-summary {
+        padding: 20px;
+    }
+
+}
